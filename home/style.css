@@ -1,0 +1,280 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #000; /* Fundo preto */
+    color: #fff; /* Texto branco */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    padding: 20px 0;
+    border-bottom: 1px solid #222;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #eee;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #aaa;
+    text-decoration: none;
+}
+div a {
+    text-decoration: none;
+    color: #fff;
+}
+header .page-indicator {
+    background-color: #8a2be2; /* Roxo */
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+main.container {
+    padding: 40px 20px; /* Adiciona um pouco mais de espaço interno */
+}
+
+main h1 {
+    color: #eee;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+main.container.accordion {
+    padding: 40px 20px;
+}
+
+main.container.accordion h1 {
+    color: #eee;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Estilos para os itens do acordeão */
+.accordion-item {
+    background-color: #222; /* Fundo mais escuro para os itens */
+    border: 1px solid #333; /* Borda sutil entre os itens */
+    border-radius: 8px;
+    margin-bottom: 15px;
+    overflow: hidden; /* Para garantir que as bordas arredondadas funcionem */
+}
+
+.accordion-button {
+    background-color: #333; /* Fundo mais claro para os botões */
+    color: #eee;
+    padding: 15px;
+    font-size: 1em;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #444; /* Fundo um pouco mais claro quando aberto */
+    color: #3e65cf; 
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    border-color: transparent;
+    box-shadow: none;
+}
+
+.accordion-body {
+    padding: 20px;
+    color: #aaa;
+    line-height: 1.6;
+}
+
+
+.avoid-section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #111; /* Fundo escuro para as seções */
+    border-radius: 8px;
+}
+
+.avoid-section h2 {
+    color: #8a2be2; /* Roxo para os títulos das seções */
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.avoid-section p {
+    color: #aaa;
+    line-height: 1.6;
+}
+.video-section {
+    padding: 60px 0;
+    background-color: #111; /* Um fundo um pouco diferente para destacar a seção */
+}
+
+.video-section .container {
+    text-align: center;
+}
+
+.video-section h2 {
+    color: #eee;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+.video-container {
+    display: inline-block; /* Para centralizar o vídeo */
+    border-radius: 8px;
+    overflow: hidden; /* Se quiser bordas arredondadas no vídeo */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+    max-width: 1000px;
+    width: 100%;
+}
+
+.video-container video {
+    width: 100%; /* O vídeo ocupa a largura do contêiner */
+    height: auto;
+    display: block; /* Remove espaço extra abaixo do vídeo */
+
+}
+.hero {
+    background: linear-gradient(135deg, #4a00e0, #8e2de2);
+    position: relative;
+    max-width: 100%;
+    height: 550px; /* Vamos tentar esta altura - ajuste conforme necessário */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+#carouselExampleCaptions {
+    width: 100%; /* Ocupar toda a largura do hero */
+    height: 100%; /* Ocupar toda a altura do hero */
+     margin-left: -20px; /* Negativo para esquerda */
+    margin-right: -20px; /* Negativo para direita */
+}
+
+
+.carousel {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.carousel-item {
+    height: 100%;
+}
+
+.carousel-item img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Usar 'contain' para mostrar a imagem inteira */
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.intro-section {
+    padding: 10px 0; /* Adiciona um espaçamento vertical */
+    background-color: #111; /* Um fundo escuro para contrastar com o preto */
+    color: #eee; /* Texto em tom mais claro */
+    text-align: center; /* Centraliza o conteúdo da seção */
+}
+
+.intro-section .container {
+    max-width: 800px; /* Limita a largura do conteúdo para melhor leitura */
+    margin: 0 auto; /* Centraliza o container */
+    padding: 0 20px; /* Adiciona um pouco de padding nas laterais do container */
+}
+
+.intro-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #8a2be2; /* Roxo, para manter a paleta de cores */
+}
+
+.intro-section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.cta-section {
+    padding: 50px 0;
+    background-color: #222; /* Um fundo um pouco mais claro que o preto */
+    color: #fff;
+    text-align: center;
+}
+
+.cta-section .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.cta-section h2 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    color: #8a2be2; /* Roxo para destaque */
+}
+
+.cta-section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.cta-section .button {
+    display: inline-block;
+    background-color: #8a2be2; /* Roxo */
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.cta-section .button:hover {
+    background-color: #6a1b9a;
+}
+
+footer {
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #222;
+    color: #777;
+    font-size: 0.9em;
+}

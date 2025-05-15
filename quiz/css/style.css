@@ -1,0 +1,180 @@
+/* Estilização geral */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #111; /* Preto */
+    color: #eee; /* Cinza claro */
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Main container */
+.quiz-main {
+    max-width: 800px; /* Aumentei um pouco */
+    margin: 20px auto;
+    background-color: #222; /* Cinza escuro */
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+}
+
+/* Título */
+.quiz-title {
+    font-size: 2.5em; /* Aumentei um pouco */
+    margin-bottom: 20px;
+    color: #8a2be2; /* Roxo */
+}
+
+/* Descrição */
+.quiz-description {
+    font-size: 1.1em;
+    color: #aaa; /* Cinza mais escuro */
+    margin-bottom: 30px;
+}
+
+/* Container das perguntas */
+.quiz-content {
+    margin-bottom: 20px;
+}
+
+/* Seção de cada pergunta */
+.quiz-question {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #333; /* Cinza mais claro */
+    border-radius: 8px;
+    text-align: left; /* Alinhar o texto à esquerda */
+}
+
+/* Texto da pergunta */
+.question-text {
+    font-size: 1.2em;
+    color: #eee;
+    margin-bottom: 15px;
+}
+
+/* Container das respostas */
+.answers-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Uma coluna por padrão */
+    gap: 10px;
+}
+
+/* Labels das respostas */
+.answer label {
+    display: block;
+    padding: 12px;
+    background-color: #444; /* Cinza mais claro */
+    color: #eee;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.answer label:hover {
+    background-color: #555;
+}
+
+/* Input radio */
+.answer input[type="radio"] {
+    display: none;
+}
+
+/* Label selecionada */
+.answer input[type="radio"]:checked + label {
+    background-color: #8a2be2; /* Roxo */
+    color: #111;
+    font-weight: bold;
+}
+
+/* Botões */
+.quiz-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.quiz-button {
+    background-color: #8a2be2; /* Roxo */
+    color: #eee;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    margin: 0 10px;
+}
+
+.quiz-button:hover {
+    background-color: #6a1b9a; /* Roxo mais escuro */
+    transform: scale(1.02);
+}
+
+/* Resultado */
+.quiz-result {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #333; /* Cinza mais claro */
+    border-radius: 8px;
+    color: #eee;
+    text-align: center;
+}
+
+.quiz-result h2 {
+    color: #8a2be2; /* Roxo */
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.quiz-result p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Resposta correta */
+.answer-correct label {
+    background-color: #4caf50; /* Verde */
+    color: #111;
+}
+
+/* Resposta incorreta */
+.answer-incorrect label {
+    background-color: #f44336; /* Vermelho */
+    color: #eee;
+}
+.quiz-buttons {
+    text-align: center;
+    margin-top: 20px;
+    display: flex; /* Adicione isso */
+    justify-content: center; /* Centralize horizontalmente */
+    align-items: center; /* Centralize verticalmente */
+    gap: 10px; /* Espaçamento entre os botões */
+}
+
+.quiz-button {
+    background-color: #8a2be2; /* Roxo */
+    color: #eee;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    text-decoration: none; /* Adicione isso para remover o sublinhado do link */
+}
+
+.quiz-button:hover {
+    background-color: #6a1b9a; /* Roxo mais escuro */
+    transform: scale(1.02);
+}
+
+.return-button {
+    /* Herda os estilos de .quiz-button, então não precisamos repetir */
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .quiz-main {
+        width: 90%;
+    }
+}
